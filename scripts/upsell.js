@@ -634,7 +634,7 @@ const processKlarnaUpsell = async () => {
         body: JSON.stringify({
           offers: offers.map((o) => JSON.stringify(o)),
           order_id: lastOrderId,
-          pageId: "eerRk_tLpbyYQ6z_Ql-MnWU07iMjoOV3NCclKtbnXieJ08IZvecTamCgzp7f1uQc"
+          pageId: "4mzMWJtD42VISgT_NNg7aNc10Ovz7pDMBKm-19oaRBBUlvdtypbSHWl2VR5KSWbl"
         })
       }
     );
@@ -714,7 +714,7 @@ const processUpsell = async () => {
   }
   try {
     const orderData = JSON.parse(sessionStorage.getItem("orderData"));
-    orderData.pageId = "eerRk_tLpbyYQ6z_Ql-MnWU07iMjoOV3NCclKtbnXieJ08IZvecTamCgzp7f1uQc";
+    orderData.pageId = "4mzMWJtD42VISgT_NNg7aNc10Ovz7pDMBKm-19oaRBBUlvdtypbSHWl2VR5KSWbl";
     const lastOrderId = sessionStorage.getItem("cms_oid");
     const stripePayment = JSON.parse(sessionStorage.getItem("stripePayment"));
     const isStripeTestOrder = stripePayment && !stripePayment.isLive;

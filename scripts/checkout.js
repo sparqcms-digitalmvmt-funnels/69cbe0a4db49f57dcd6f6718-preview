@@ -602,7 +602,7 @@ async function createOrderViaWallet(confirmationToken, paymentMethodId) {
         ?.getAttribute("data-shipping-profile-id") || undefined;
 
   const orderData = {
-    pageId: "b_9G3F7LlamOGIVy5QDMr0HrWxafiJHhzTtGy_fgD-vpFsp10VfsxYR8k2oDH1Eu",
+    pageId: "G8377Hp3h5fwE-dPbvjlTLHzEWCHvHL7hzCWL1rVQy7Xw4Pc3sxWg7YkqZ8dshrV",
     action: "process",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1,
@@ -1389,7 +1389,7 @@ async function createOrderViaPaypal(isExpress = false) {
   const shippingProfileId = +document.querySelector(`[data-product-id="${selectedProduct.id}"]`)?.getAttribute('data-shipping-profile-id') || undefined;
   const sameAddress = isSameAddress();
   const orderData = {
-    pageId: "b_9G3F7LlamOGIVy5QDMr0HrWxafiJHhzTtGy_fgD-vpFsp10VfsxYR8k2oDH1Eu",
+    pageId: "G8377Hp3h5fwE-dPbvjlTLHzEWCHvHL7hzCWL1rVQy7Xw4Pc3sxWg7YkqZ8dshrV",
     action: "process",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1, // VRIO URL ending /connection
@@ -1687,7 +1687,7 @@ async function createOrderViaKlarna() {
   const sameAddress = isSameAddress();
 
   const orderData = {
-    pageId: "b_9G3F7LlamOGIVy5QDMr0HrWxafiJHhzTtGy_fgD-vpFsp10VfsxYR8k2oDH1Eu",
+    pageId: "G8377Hp3h5fwE-dPbvjlTLHzEWCHvHL7hzCWL1rVQy7Xw4Pc3sxWg7YkqZ8dshrV",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1,
     email: email,
@@ -2064,7 +2064,7 @@ async function createOrderViaCreditCard() {
   let orderTotal = Math.max(0, Number(selectedProduct.price) * selectedProduct.quantity);
 
   const orderData = {
-    pageId: "b_9G3F7LlamOGIVy5QDMr0HrWxafiJHhzTtGy_fgD-vpFsp10VfsxYR8k2oDH1Eu",
+    pageId: "G8377Hp3h5fwE-dPbvjlTLHzEWCHvHL7hzCWL1rVQy7Xw4Pc3sxWg7YkqZ8dshrV",
     action: "process",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1, // VRIO URL ending /connection
@@ -3978,7 +3978,7 @@ async function returnPaypal() {
 ;
 
     const body = {
-        pageId: "b_9G3F7LlamOGIVy5QDMr0HrWxafiJHhzTtGy_fgD-vpFsp10VfsxYR8k2oDH1Eu",
+        pageId: "G8377Hp3h5fwE-dPbvjlTLHzEWCHvHL7hzCWL1rVQy7Xw4Pc3sxWg7YkqZ8dshrV",
         action: "process",
         campaign_id: CAMPAIGN_ID,
         connection_id: 1,
